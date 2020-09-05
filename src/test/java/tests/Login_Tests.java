@@ -39,4 +39,8 @@ public class Login_Tests {
         System.out.println("test 3 is created");
         driver.close();
     }
+     @Test
+    public  static  void test4(){
+         System.out.println("pulling changes from origin master to the feature branch");
+     }
 }
