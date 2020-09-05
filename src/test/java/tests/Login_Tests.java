@@ -26,9 +26,17 @@ public class Login_Tests {
     public static void test1(){
         driver.get("http://secure.smartbearsoftware.com/samples/testcomplete12/WebOrders/login.aspx");
         driver.findElement(By.id("ctl00_MainContent_username")).sendKeys("Tester");
-        driver.findElement(By.id("ctl00_MainContent_password")).sendKeys("tester" + Keys.ENTER);
 
-        Assert.assertEquals(driver.getTitle(), "Web Orders");
+    }
+    @Test
+    public static void test2(){
+        driver.close();
+        System.out.println("test vindow is close now!");
+    }
 
+    @Test
+    public static void test3(){
+        System.out.println("test 3 is created");
+        driver.close();
     }
 }
